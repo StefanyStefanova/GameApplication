@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/o"
+    android:orientation="vertical"
+
+    >
+
+    <EditText
+        android:id="@+id/NameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/ScoreTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:hint="score"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@android:color/background_light"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/SaveButton"
+            android:layout_width="20dp"
+            android:layout_height="53dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/save"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/CancelButton"
+            android:layout_width="25dp"
+            android:layout_height="58dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/art"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/simpleListView"
+            android:layout_width="396dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:divider="#f00"
+            android:dividerHeight="1dp" />
+    </LinearLayout>
+
+</LinearLayout>

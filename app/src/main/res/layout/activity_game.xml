@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/d"
+    tools:context=".GameActivity">
+
+    <TextView
+        android:id="@+id/numberToGuessTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="130dp"
+        android:text="\?"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/infoTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hintTextView"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="54dp"
+        android:textColor="@android:color/holo_green_dark"
+        android:textColorHint="@android:color/background_dark"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/infoTextView" />
+
+    <TextView
+        android:id="@+id/usedNumbersTextView"
+        android:layout_width="253dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="#EF8711"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/instructionsTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hintTextView" />
+
+    <EditText
+        android:id="@+id/numberEditText"
+        android:layout_width="236dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/instructionsTextView" />
+
+    <Button
+        android:id="@+id/guessButton"
+        android:layout_width="81dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="29dp"
+        android:background="@android:color/holo_green_light"
+        android:text="Guess"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberEditText" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="81dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="123dp"
+        android:background="@android:color/holo_red_light"
+        android:text="Reset"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.239"
+        app:layout_constraintStart_toEndOf="@+id/guessButton"
+        app:layout_constraintTop_toBottomOf="@+id/numberEditText" />
+
+    <TextView
+        android:id="@+id/instructionsTextView"
+        android:layout_width="282dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="cursive"
+        android:includeFontPadding="false"
+        android:text="Enter a number between 0 - 100"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/numberEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usedNumbersTextView" />
+
+    <TextView
+        android:id="@+id/infoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="130dp"
+        android:fontFamily="cursive"
+        android:shadowColor="@color/colorPrimary"
+        android:text="The number is "
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/LivesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="344dp"
+        android:text="Lives"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoTextView" />
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:text="Score"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LivesTextView" />
+
+    <Button
+        android:id="@+id/saveScoreButton"
+        android:layout_width="115dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="72dp"
+        android:background="@android:color/holo_orange_light"
+        android:text="Save Score"
+        android:textColorHighlight="#4CAF50"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resetButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
