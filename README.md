@@ -1,2 +1,2 @@
-# GameApplication #AndroidStudio #GameForAndroid
+# GameApplication
 Game "Guess the number" for Android
