@@ -1,2 +1,2 @@
-# GameApplication
-Game "Guess the number" for Android
+# GuessTheNumber
+Game "Guess the number" for Android.
