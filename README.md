@@ -1,2 +1,2 @@
 # GuessTheNumber
-Game "Guess the number" for Android.
+Game "Guess the number"
